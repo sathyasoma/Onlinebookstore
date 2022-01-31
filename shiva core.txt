@@ -1,0 +1,531 @@
+
+core java:
+=========
+
+language: english,hindi,telugu
+  general kind languages
+  
+progrmming language:to communicate with the macahine
+
+0's 1s binary lang byte code
+
+softwares /applications
+
+1.ATM applications
+2.billing applications
+3,calculator applications
+
+
+industry people 2 types
+
+1.standalone applications/desktop =
+    the application which we can run on our machine
+	
+	eg: vlc,antivirus,
+	
+	we canot share the data
+	
+2.Distributed application/network based applications=
+    eg; facebook. gmail,insta
+	
+	we can share the data
+
+pop                                                  oop
+
+procedure oriented languages                     object oriented lanigage
+
+c,b,bcpl,cobol,pascal                         lisp,c++,java,python.Net ..etc
+
+
+Security and performance
+
+
+oops                                                   oopl
+
+features or methodoligis
+
+omg (canadian org)
+object management group
+
+
+oops feature:
+
+
+Inheritance
+Polymorphism--------->performance
+Abstraction
+Encapsulation-------> security
+
+unique:
+=====
+1.platform independent
+2.garbage collection
+
+java:
+======
+java is one of the object oriented programming languages for the pupose of developing both
+  standalone and distributed application.
+
+
+james gosling---> 1995 --->sunmicro system
+
+
+oracal 
+
+www.oracle.com
+
+53 keywords
+
+goto,constant--unused
+
+c program---c software---turbo c
+cpp ---cpp soft----tubo cpp
+java program--java soft--jdk8 (java development kit)
+
+current version 17
+standard versio- 8
+
+
+
+prerequisites for java programming
+=================================
+1.java softwares
+2.installation
+3.path setting
+4.editors
+5.compilation
+6.execution
+
+//-single line comments
+/* 
+
+-multi line comments
+
+
+ */
+
+basic structire of java program:
+--------------------------------
+
+
+class Shiva{    //class declaration
+
+
+public static void main(String args[])   //main method declaration
+{
+
+  System.out.println("welcome to java");
+
+
+}
+
+}
+
+
+editors:
+------
+notepad,notepad++,eclipse, intellij,
+
+.java
+.class
+compilation
+execution
+jvm
+
+          compilation(compiler)
+.java-----------------------------.class
+
+
+syntax compilation:
+------------------
+javac filename.java
+
+javac Shiva.java
+
+
+
+java classname
+
+java  Shiva
+
+
+
+1.platform Independent:(WORA)  WRITE ONCE RUN ANYWHERE
+=======================
+
+            PI
+windows=====================>linux(.class)
+.class
+ORACLE
+
+
+.net  microsoft
+            pd
+windows-------------------->windows
+.class
+
+
+
+
+
+garbage collection:
+--------------------
+
+int age= 23;           4bytes memory
+
+1000       1000*4=4000bytes  
+
+1 varible
+
+
+
+garbage collection(garbage collector)
+
+c++-->program
+
+
+
+2.garabage collection
+
+
+
+varibles:
+=========
+varibale is the location or container to store the values
+
+syntax:
+========
+
+datatype variablename= value/data;
+
+int age=45;
+
+datatypes:
+===========
+
+primitive datatypes 
+                                              non primitive dt
+byte                                             String, Array
+short
+int
+long---------->to store the numbers
+float
+double------>to store decimal values
+char----->to store the charecters
+boolean--->to logical values(true,false)
+
+
+
+datatype variablename=value/data;
+
+
+int number =89;
+
+
+variables are two types
+
+1.local variabl:  within the method
+2.global varaible: within the class outside the method
+      instance varriable
+	  static variable
+
+
+
+class Shiva{    //class declaration
+
+    float salary=20000;//instance variable
+ 
+static int number=67; //  static variable
+
+public static void main(String args[])   //main method declaration
+{
+  
+    int age=89; //local variable
+
+}
+
+}
+
+
+
+4 differences:properties(variables/methods)
+=========
+
+
+syntax:
+=======
+
+if it is static property  : static keywords  : static int age=67;  //static variable
+without static key word: instance                      int number=56;   //intance varaible
+                                                brothephn=7745564:
+memory:
+-------
+
+static properties will get the memory space at the time of "class" loading into jvm
+
+instance properties will get the memrory space @ time of "object creation"
+
+how to access:
+=============
+
+static properties will acces by using "class name"   : Shiva.age
+
+instance propertie will acces by using "object reference"
+
+when to use:
+===========
+whwen common properties: static
+
+unique: instance
+
+
+
+
+//object creation
+
+className objectreferenc= new Constructor();
+
+Shiva  sh= new Shiva();  //object creation
+
+
+
+
+class Shiva{    //class declaration
+
+    int stid=123;//instance variable
+ 
+static String schlname="aditya primary schol"; //  static variable
+
+public static void main(String args[])   //main method declaration
+{
+  
+    int age=89; //local variable
+	System.out.println(age);
+	Shiva  sh= new Shiva(); //object creation
+	
+	System.out.println(Shiva.schlname); //static varible printing
+		System.out.println(sh.stid); //instance variable printing
+
+}
+
+}
+
+methods:
+-------
+
+synatx:
+=======
+
+public static void main(String []args){}
+accessmodifier returntype methodname(int age,String name,float salary)
+{
+
+//method body
+}
+
+
+public void display()
+{
+System.out.println("this is display method");
+}
+
+
+public int addition(int a, int b) //4+5=9
+{
+
+return a+b;
+
+}
+
+Shiva obj= new Shiva();
+obj.dispaly();
+
+
+class Test{
+
+
+int age=78; //
+static int number=90; 
+
+public static void main(String args[]){
+
+int firstnum=78;
+System.out.println("i am local"+firstnum);
+
+
+Test
+
+
+}
+
+
+
+}
+
+
+public class Test2 {
+
+float salary=9000.09f; //instance varibale
+
+static String name="shiva"; //static varibale
+
+//accessmodifier returntype methodname(){}
+
+public int addOfTwo(int a,int b) {
+	
+	return a+b;
+
+}
+
+public static void display() {
+	
+	System.out.println("this is printingstattemnt");
+}
+
+	public static void main(String[] args) {
+		
+		
+		int age=67; //local variable
+		
+		System.out.println(age);
+		
+		System.out.println(name);
+		
+		//classname obref=new constructor();
+		
+		Test2 shiva=new Test2();
+		
+		System.out.println(shiva.salary);
+		
+		Test2.display();
+		System.out.println("addition of two numbers  :"+shiva.addOfTwo(78, 12));
+		
+	}
+}
+
+
+//accesmodifier returntype methodname()
+{
+
+//logic
+}
+
+flow controls:(control statements)
+===============
+
+statemnt1
+2
+3---7times
+4
+5---8tms
+6--10 times
+
+1.DECISION MAKING STATEMENTS
+   1.if
+   2.if else
+   3.else-if
+   4.switch
+
+2.LOOPING STATEMENTS
+   for loop
+   while loop
+   do while
+3.JUMPING STTAEMNTS
+
+    break
+	continue
+
+
+int a=400;
+
+if(a)
+{
+Syso("a is greater thasn 300");
+}
+else{
+
+Syso("a is not greater than 300");
+}
+
+
+if(condition)
+{
+
+
+}
+
+
+
+switch case:
+
+
+int x=4;
+
+switch(x){
+
+case 1:
+  Syso("this is case 1");
+case 2:
+  Syso("this is case 2");
+  case 3:
+  Syso("this is case 3");
+  case 4:
+  Syso("this is case 4");
+  case 5:
+  Syso("this is case 5");
+  default:
+  Syso("doent match");
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
